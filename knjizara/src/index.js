@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'jquery/dist/jquery.min.js';
+import { BrowserRouter } from 'react-router-dom';
+import { KorpaKontextProvider } from './store/korpa-kontekst';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <KorpaKontextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </KorpaKontextProvider>,
   document.getElementById('root')
 );
 

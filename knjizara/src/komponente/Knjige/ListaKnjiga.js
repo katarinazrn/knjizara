@@ -21,7 +21,7 @@ const ListaKnjiga = props => {
     }, [props.knjige, params.kategorija])
 
     return (
-        <Lista naslov={naslov} knjige={knjige} />
+        <Lista naslov={props.naslov? props.naslov : naslov} knjige={knjige} />
     )
 }
 
