@@ -1,0 +1,92 @@
+[
+    {
+        "id":0,
+        "ime": "ljubavni"
+    },
+    {
+        "id":1,
+        "ime":"triler"
+    },
+    {
+        "id":2,
+        "ime":"akcioni"
+    },
+    {
+        "id":3,
+        "ime":"avanturistički"
+    },
+    {
+        "id":4,
+        "ime":"naučna fantastika"
+    },
+    {
+        "id":5,
+        "ime":"fantastika"
+    },
+    {
+        "id":6,
+        "ime":"biografija"
+    },
+    {
+        "id":7,
+        "ime":"autobiografija"
+    },
+    {
+        "id":8,
+        "ime":"horor"
+    },
+    {
+        "id":9,
+        "ime":"poezija"
+    },
+    {
+        "id":10,
+        "ime":"tinejdž"
+    },
+    {
+        "id":11,
+        "ime":"komedija"
+    },
+    {
+        "id":12,
+        "ime":"popularna psihologija"
+    },
+    {
+        "id":13,
+        "ime":"putopis"
+    },
+    {
+        "id":14,
+        "ime":"knjige za decu"
+    },
+    {
+        "id":15,
+        "ime":"epska fantastika"
+    },
+    {
+        "id":16,
+        "ime":"drama"
+    },
+    {
+        "id":17,
+        "ime":"istorijski"
+    },
+    {
+        "id":18,
+        "ime":"priče"
+    },
+    {
+        "id":19,
+        "ime":"mitologija"
+    },
+    {
+        "id":20,
+        "ime":"klasici"
+    },
+    {
+        "id":21,
+        "ime":"kriminalistički"
+    }
+    
+
+]
