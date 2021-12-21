@@ -1,9 +1,13 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import KorpaKontekst from "../../store/korpa-kontekst";
 
 const Korpa = props => {
     const korpa = useContext(KorpaKontekst);
+
+    useEffect(() => {
+        document.title = 'Korpa';
+    }, []);
 
     return (
         <div className="row">

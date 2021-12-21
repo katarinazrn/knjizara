@@ -6,7 +6,7 @@ import tw from '../sredstva/twitter.png';
 
 const Futer = props => {
     return (
-        <footer className='bg-secondary row m-0 p-0'>
+        <footer className='bg-secondary mb-0 w-100 navbar mt-auto row m-0 p-0'>
             <div className="col m-0 p-4 d-flex justify-content-sm-end">
                 <NavLink to='/' className='text-light p-2'  style={{textDecoration:'none'}}>Naslovna</NavLink>
                 <NavLink to='/knjige' className='text-light p-2'  style={{textDecoration:'none'}}>Knjige</NavLink>

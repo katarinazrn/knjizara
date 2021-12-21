@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Heder from './komponente/Heder';
 import Kontejner from './komponente/UI/Kontejner';
 import { useState, useEffect, Fragment } from 'react';
@@ -14,27 +14,28 @@ import KNJIGE from './PODACI/KNJIGE/knjige.json';
 import AUTORI from './PODACI/AUTORI/autori.json';
 import Korpa from './komponente/Kupovina/Korpa';
 import Futer from './komponente/Futer';
+import NijePronadjeno from './komponente/UI/NijePronadjeno';
 
 const App = () => {
 
-  const [sveKnjige, postaviSveKnjige] = useState([]);
-  const [sviAutori, postaviSveAutore] = useState([]);
+  const [sveKnjige, setSveKnjige] = useState([]);
+  const [sviAutori, setSviAutori] = useState([]);
 
-  const [rezultatPretrage, postaviRezultatPretrage] = useState([]);
-  const [terminZaPretragu, postaviTermin] = useState('');
+  const [rezultatPretrage, setRezultatPretrage] = useState([]);
+  const [terminZaPretragu, setTermin] = useState('');
 
-  const [proizvodiUKoripi, postaviProizvode] = useState([]);
+  const [proizvodiUKoripi, setProizvodi] = useState([]);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    postaviSveKnjige(KNJIGE);
-    postaviSveAutore(AUTORI);
+    setSveKnjige(KNJIGE);
+    setSviAutori(AUTORI);
   }, []);
 
   const pretrazi = (e, termin) => {
     e.preventDefault();
-    postaviTermin(termin);
+    setTermin(termin);
 
     let knjige = [];
 
@@ -47,7 +48,7 @@ const App = () => {
       }
     });
 
-    postaviRezultatPretrage(knjige);
+    setRezultatPretrage(knjige);
     navigate('knjige/pretraga');
   }
 
@@ -62,7 +63,7 @@ const App = () => {
         <Routes>
           <Route path='/'>
             <Route path='' element={<Naslovna />} />
-            <Route path='knjige/:id/:naslov'  element={<KnjigaDetalji knjige={sveKnjige} />} />
+            <Route path='knjige/:id/:naslov' element={<KnjigaDetalji knjige={sveKnjige} />} />
             <Route path='knjige' element={<KnjigePoKategorijama knjige={sveKnjige} />} >
               <Route path=':kategorija' element={<ListaKnjiga knjige={sveKnjige} />} />
               <Route path='' element={<ListaKnjiga knjige={sveKnjige} />} />
@@ -73,6 +74,7 @@ const App = () => {
               <Route path=':id' element={<AutorDetalji knjige={sveKnjige} autori={sviAutori} />} />
             </Route>
             <Route path='korpa' element={<Korpa />} />
+            <Route path='*' element={<NijePronadjeno />} />
           </Route>
         </Routes>
       </Kontejner>

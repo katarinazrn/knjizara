@@ -1,8 +1,13 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
 import knjige from '../../PODACI/KNJIGE/knjige.json';
 import KarticaKnjiga from '../Knjige/KarticaKnjiga';
 
 const Naslovna = props => {
+
+  useEffect(() => {
+    document.title = 'Knjizara Novela';
+  }, []);
 
   return (
     <div>
@@ -24,15 +29,14 @@ const Naslovna = props => {
               </h2>
             </div>
           </div>
-          <div className="carousel-item"
-            style={{
-              backgroundImage: `url(${require('../../PODACI/KNJIGE/izdovjeno/bg8.jpg')})`,
-              backgroundSize: 'cover', backgroundPosition: 'center',
-              backdropFilter: 'greyscale(0.5)'
-            }}>
+          <div className="carousel-item" style={{
+            backgroundImage: `url(${require('../../PODACI/KNJIGE/izdovjeno/bg9.jpg')})`,
+            backgroundSize: 'cover', backgroundPosition: 'center'
+          }}>
             <div className='d-flex justify-content-center'>
-              <h1 className='text-center fw-bold col-4 my-auto' style={{ color: 'rgb(6, 6, 78)' }}>
-                Dečja knjiga meseca
+              <h1 className='text-center fw-bold col-4 my-auto fw-bold' style={{ color: 'rgb(146, 17, 82)' }} >
+                Dečja knjiga <br />
+                MESECA
               </h1>
               <NavLink to={`/knjige/${knjige[38].id}/${knjige[38].naslov}`} >
                 <img className='p-3' style={{ maxHeight: '300px', width: 'auto' }}

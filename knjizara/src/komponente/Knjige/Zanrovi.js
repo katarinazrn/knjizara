@@ -1,18 +1,17 @@
 import ZANROVI from '../../PODACI/KNJIGE/zanrovi.json';
-import './Knjige.css';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Zanrovi = props => {
 
-    const [zanrovi, postaviZanrove] = useState([]);
+    const [zanrovi, setZanrovi] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
         let z = ZANROVI;
         z = z.sort((a, b) => a.ime > b.ime);
-        postaviZanrove(z);
+        setZanrovi(z);
     }, [])
 
     return (

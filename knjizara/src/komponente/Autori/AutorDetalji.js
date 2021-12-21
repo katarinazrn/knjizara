@@ -1,26 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
-import KarticaKnjiga from "../Knjige/KarticaKnjiga";
 import Lista from "../Knjige/Lista";
+import NijePronadjeno from "../UI/NijePronadjeno";
+import Ucitavanje from "../UI/Ucitavanje";
 
 const AutorDetalji = props => {
 
-    const [autor, postaviAutora] = useState(null);
-    const [knjige, postaviKnjige] = useState([]);
+    const [autor, setAutor] = useState(null);
+    const [greska, setGreska] = useState(false);
+    const [knjige, setKnjige] = useState([]);
     const params = useParams();
 
     useEffect(() => {
 
+        document.title = 'Autor';
+        setGreska(false);
+
         if (props.autori && params.id && props.knjige) {
-            postaviAutora(props.autori.filter(a => a.id == +params.id)[0]);
-            postaviKnjige(props.knjige.filter(k => k.autor_id == +params.id));
+            setAutor(props.autori.filter(a => a.id == +params.id)[0]);
+            setKnjige(props.knjige.filter(k => k.autor_id == +params.id));
+
+            if (props.autori.filter(a => a.id == +params.id).length < 1) {
+                setGreska(true);
+            }
         }
 
     }, [props.autori, props.knjige, params.id]);
 
+    if(greska){
+        return <NijePronadjeno />
+    }
+
     if (!autor) {
-        return <div>Ucitavanje...</div>
+        return <Ucitavanje />
     }
 
     return (

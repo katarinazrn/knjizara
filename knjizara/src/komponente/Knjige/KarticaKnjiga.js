@@ -6,7 +6,7 @@ const KarticaKnjiga = props => {
     return (
         <div className="col">
             <div className="card h-100 border-0 m-3 m-sm-0 rounded-0 ">
-                <Link to={`/knjige/${props.knjiga.id}/${props.knjiga.naslov}`} >
+                <Link className='ratio' style={{"--bs-aspect-ratio": '154%'}} to={`/knjige/${props.knjiga.id}/${props.knjiga.naslov}`} >
                     <img className="card-img-top mt-auto " src={require(`../../PODACI/KNJIGE/korice/${props.knjiga.korice}`)} alt={props.knjiga.naslov} />
                 </Link>
                 <div className='card-body text-center m-0 p-0 '>

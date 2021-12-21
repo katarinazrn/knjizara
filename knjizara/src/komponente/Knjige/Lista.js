@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import KarticaKnjiga from "./KarticaKnjiga";
 
 const Lista = props => {
+
+    useEffect(()=>{
+        document.title='Knjige';
+    },[])
+
     return (
         <div className="col m-sm-0 m-3 p-0 ">
             {props.naslov && <h2 className="ms-0 ms-sm-3 text-center text-sm-start">{props.naslov}</h2>}

@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState } from "react";
-import KarticaKnjiga from '../Knjige/KarticaKnjiga';
 import Lista from '../Knjige/Lista';
 
 const Paginacija = props => {
