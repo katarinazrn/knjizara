@@ -418,5 +418,53 @@
     "godina_izdanja": 2020,
     "broj_strana": 160,
     "cena": 499
+  },
+  {
+    "id": 35,
+    "naslov": "Američki bogovi",
+    "autor": "Nil Gejmen",
+    "autor_id": 19,
+    "kategorije": "fantastika",
+    "opis": "Prvi put objavljen 2001, roman Američki bogovi istog časa je postao klasik – intelektualni i umetnički vrhunac višestruko nagrađivanog majstora inovativne fikcije, Nila Gejmena. Sada imate priliku da otkrijete misteriju i magiju nove verzije autorovog rukopisa.  Prošireno i dopunjeno izdanje Američkih bogova sa revidiranim prevodom, iskonsko je ruho ovog savremenog remek-dela. ",
+    "korice": "americki_bogovi-nil_gejmen_v.jpg",
+    "godina_izdanja": 2017,
+    "broj_strana": 576,
+    "cena": 1199
+  },
+  {
+    "id": 36,
+    "naslov": "Slovenska mitologija",
+    "autor": "Nenad Gajić",
+    "autor_id": 8,
+    "kategorije": "mitologija",
+    "opis": "Bogovi, demonologija, mitska mesta, magijski rituali... Slovenska mitologija je idealan spoj modernog pristupa mitološkoj temi i naučne studije, koja kao jedini imperativ sebi postavlja činjeničnu zasnovanost, bogatstvo podataka i sveobuhvatnost i odgovornost naučne istine. Niz celovitih članaka o slovenskim bogovima, običajima, ritualima i mitskim predstavama, veoma opsežno obuhvata sve ono što predstavlja osnovnu mitološku supstancu slovenskih naroda (slovenski panteon bogova), zatim ono što prethodi uspostavljanju mitološke svesti i poretka (jezik, religija, predanje…) i, najzad, ono što je savremenom čitaocu ali i ozbiljnom istraživaču mnogo važnije: običaji i verovanja koja su se iz mitologije preselila u svakodnevne društvene ili religiozne rituale.    ",
+    "korice": "slovenska_mitologija-nenad_gajic_v.jpg",
+    "godina_izdanja": 2011,
+    "broj_strana": 208,
+    "cena": 1799
+  },
+  {
+    "id": 37,
+    "naslov": "Ostrvo pacova i druge priče ",
+    "autor": "Ju Nesbe",
+    "autor_id": 26,
+    "kategorije": "triler,kriminalistički",
+    "opis": "Dobro došli na Ostrvo pacova, u postpandemijsku Ameriku, gde imućni na vrhovima nebodera čekaju na evakuaciju dok se oni manje srećni bore po ulicama za opstanak. U Brisaču naučnik koji istražuje večni život u poslednjem trenutku aktivira brisač sećanja pomoću kog može da zaboravi sve, jer je sećanje opasno.Cvrčci pripovedaju o dva najbolja prijatelja koji se na putu za trke s bikovima u Pamploni zaljubljuju u istu devojku.Protivotrov prati otuđenog sina koji planira posetu ocu na farmi zmija u Africi. ",
+    "korice": "ostrvo_pacova_i_druge_price-ju_nesbe_v.jpg",
+    "godina_izdanja": 2021,
+    "broj_strana": 352,
+    "cena": 799
+  },
+  {
+    "id": 38,
+    "naslov": "Luče i Silvija",
+    "autor": "Aleksandra Urošević",
+    "autor_id": 34,
+    "kategorije": "knjige za decu",
+    "opis": "Devojčica Silvija i mačence Luče su najbolji prijatelji. I ništa nije smešnije i zabavnije od toga kako, s jedne strane knjige, Silvija otkriva svet oko sebe, i kako, kad okrenete knjigu, Luče svojim mačjim okicama gleda šta sve postoji u njihovom stanu. Mnogo neobičnih situacija, mnoštvo drugačijih pogleda na iste događaje, i naravno – mnogo, mnooogo smeha!",
+    "korice": "luce_i_silvija-aleksandra_urosevic_v.jpg",
+    "godina_izdanja": 2021,
+    "broj_strana": 128,
+    "cena": 499
   }
 ]

@@ -13,6 +13,7 @@ import ListaAutora from './komponente/Autori/ListaAutora';
 import KNJIGE from './PODACI/KNJIGE/knjige.json';
 import AUTORI from './PODACI/AUTORI/autori.json';
 import Korpa from './komponente/Kupovina/Korpa';
+import Futer from './komponente/Futer';
 
 const App = () => {
 
@@ -79,6 +80,7 @@ const App = () => {
           <Route path='korpa' element={<Korpa />}/>
         </Routes>
       </Kontejner>
+      <Futer />
     </Fragment>
   );
 }

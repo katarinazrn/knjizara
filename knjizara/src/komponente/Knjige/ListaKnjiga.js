@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
-import { Fragment, useEffect, useState } from "react";
-import KarticaKnjiga from "./KarticaKnjiga";
-import Lista from "./Lista";
+import {  useEffect, useState } from "react";
+import Paginacija from "../UI/Paginacija";
 
 const ListaKnjiga = props => {
 
@@ -21,7 +20,7 @@ const ListaKnjiga = props => {
     }, [props.knjige, params.kategorija])
 
     return (
-        <Lista naslov={props.naslov? props.naslov : naslov} knjige={knjige} />
+        <Paginacija naslov={props.naslov? props.naslov : naslov} podaci={knjige} limit={20} />
     )
 }
 

@@ -19,10 +19,10 @@ const KnjigaDetalji = props => {
     }
 
     return (
-        <div className="row p-5 p-sm-0">
+        <div className="row p-sm-5 p-sm-0">
             <div className="col-sm-3">
-                <img className="w-100" src={require(`../../PODACI/KNJIGE/korice/${knjiga.korice}`)} />
-            </div>
+                <img className="w-100" src={require(`../../PODACI/KNJIGE/korice/${knjiga.korice}`)} alt={knjiga.korice}/>
+            </div> 
             <div className="col-sm-9">
                 <h1 className="text-center text-sm-start">{knjiga.naslov}</h1>
                 <Link className="text-dark" style={{ textDecoration: 'none' }} to={`/autori/${knjiga.autor_id}`} >
