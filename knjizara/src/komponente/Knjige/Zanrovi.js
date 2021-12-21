@@ -1,7 +1,6 @@
 import ZANROVI from '../../PODACI/KNJIGE/zanrovi.json';
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Zanrovi = props => {
 

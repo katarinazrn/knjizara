@@ -1,4 +1,4 @@
-import { Link, Navigate, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from '../logo image.png';
 import { useRef } from 'react';
 import KorpaHeder from "./Kupovina/KorpaHeder";
