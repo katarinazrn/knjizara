@@ -74,13 +74,13 @@ const Naslovna = props => {
         <h2 className='text-center'>Nedeljna top lista</h2>
         <div className='row justify-content-center p-3'>
           <div className='col-sm-3'>
-            <KarticaKnjiga knjiga={knjige[37]} />
+            <KarticaKnjiga knjiga={knjige[36]} />
           </div>
           <div className='col-sm-3'>
             <KarticaKnjiga knjiga={knjige[11]} />
           </div>
           <div className='col-sm-3'>
-            <KarticaKnjiga knjiga={knjige[36]} />
+            <KarticaKnjiga knjiga={knjige[37]} />
           </div>
         </div>
       </div>
