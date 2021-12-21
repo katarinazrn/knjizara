@@ -9,7 +9,7 @@ const Futer = props => {
         <footer className='bg-secondary row m-0 p-0'>
             <div className="col m-0 p-4 d-flex justify-content-sm-end">
                 <NavLink to='/' className='text-light p-2'  style={{textDecoration:'none'}}>Naslovna</NavLink>
-                <NavLink to='/kategorije' className='text-light p-2'  style={{textDecoration:'none'}}>Knjige</NavLink>
+                <NavLink to='/knjige' className='text-light p-2'  style={{textDecoration:'none'}}>Knjige</NavLink>
                 <NavLink to='/autori' className='text-light p-2'  style={{textDecoration:'none'}}>Autori</NavLink>
             </div>
             <div className="col m-0 p-4 d-flex justify-content-sm-start">

@@ -29,7 +29,7 @@ const Korpa = props => {
                         {korpa.knjige.map(element =>
                             <tr key={element.knjiga.id} >
                                 <td>
-                                    <Link className="text-dark d-flex" style={{ textDecoration: 'none' }} to={`/knjiga/${element.knjiga.id}/${element.knjiga.naslov}`} >
+                                    <Link className="text-dark d-flex" style={{ textDecoration: 'none' }} to={`/knjige/${element.knjiga.id}/${element.knjiga.naslov}`} >
                                         <img style={{ width: '40px' }} src={require(`../../PODACI/KNJIGE/korice/${element.knjiga.korice}`)} alt='knjiga' />
                                         <span className='ms-2 fw-bold'>{element.knjiga.naslov} </span>
                                     </Link>

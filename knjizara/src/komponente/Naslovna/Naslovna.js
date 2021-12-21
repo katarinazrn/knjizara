@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import knjige from '../../PODACI/KNJIGE/knjige.json';
 import KarticaKnjiga from '../Knjige/KarticaKnjiga';
 
@@ -34,11 +34,11 @@ const Naslovna = props => {
               <h1 className='text-center fw-bold col-4 my-auto' style={{ color: 'rgb(6, 6, 78)' }}>
                 Dečja knjiga meseca
               </h1>
-              <Link to={`/knjiga/${knjige[38].id}/${knjige[38].naslov}`} >
+              <NavLink to={`/knjige/${knjige[38].id}/${knjige[38].naslov}`} >
                 <img className='p-3' style={{ maxHeight: '300px', width: 'auto' }}
                   action='toplista'
                   src={require(`../../PODACI/KNJIGE/korice/${knjige[38].korice}`)} alt="..." />
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

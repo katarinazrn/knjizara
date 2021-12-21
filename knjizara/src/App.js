@@ -48,7 +48,7 @@ const App = () => {
     });
 
     postaviRezultatPretrage(knjige);
-    navigate('kategorije/pretraga');
+    navigate('knjige/pretraga');
   }
 
   const oLatinica = str => {
@@ -62,22 +62,18 @@ const App = () => {
         <Routes>
           <Route path='/'>
             <Route path='' element={<Naslovna />} />
-            <Route path='kategorije' element={<KnjigePoKategorijama knjige={sveKnjige} />} >
-              <Route path=':kategorija' element={
-                <ListaKnjiga knjige={sveKnjige} />} />
-              <Route path='' element={
-                <ListaKnjiga knjige={sveKnjige} />} />
-              <Route path='pretraga' element={
-                <ListaKnjiga naslov={`Pretraga: ${terminZaPretragu}`} knjige={rezultatPretrage} />} />
+            <Route path='knjige/:id/:naslov'  element={<KnjigaDetalji knjige={sveKnjige} />} />
+            <Route path='knjige' element={<KnjigePoKategorijama knjige={sveKnjige} />} >
+              <Route path=':kategorija' element={<ListaKnjiga knjige={sveKnjige} />} />
+              <Route path='' element={<ListaKnjiga knjige={sveKnjige} />} />
+              <Route path='pretraga' element={<ListaKnjiga naslov={`Pretraga: ${terminZaPretragu}`} knjige={rezultatPretrage} />} />
             </Route>
+            <Route path='autori'>
+              <Route path='' element={<ListaAutora autori={sviAutori} />} />
+              <Route path=':id' element={<AutorDetalji knjige={sveKnjige} autori={sviAutori} />} />
+            </Route>
+            <Route path='korpa' element={<Korpa />} />
           </Route>
-          <Route path='knjiga/:id/:naslov' element={
-            <KnjigaDetalji knjige={sveKnjige} />} />
-          <Route path='autori'>
-            <Route path='' element={<ListaAutora autori={sviAutori} />} />
-            <Route path=':id' element={<AutorDetalji knjige={sveKnjige} autori={sviAutori} />} />
-          </Route>
-          <Route path='korpa' element={<Korpa />}/>
         </Routes>
       </Kontejner>
       <Futer />

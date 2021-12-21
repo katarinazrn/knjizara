@@ -26,7 +26,7 @@ const Heder = props => {
                             <NavLink to='/' className='nav-link'>Naslovna</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/kategorije' className='nav-link'>Knjige</NavLink>
+                            <NavLink to='/knjige' className='nav-link'>Knjige</NavLink>
                         </li>
                         <li className='nav-item'>
                             <NavLink to='/autori' className='nav-link'>Autori</NavLink>

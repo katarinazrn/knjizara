@@ -29,7 +29,7 @@ const Zanrovi = props => {
                 <h4>Kategorije</h4>
                 {zanrovi.map(zanr => {
                     let link = encodeURIComponent(zanr.ime);
-                    return <NavLink to={'/kategorije/' + link} key={zanr.id}
+                    return <NavLink to={'/knjige/' + link} key={zanr.id}
                         className='list-group-item list-group-item-action p-1 border-0' style={{ cursor: 'pointer' }}>
                         {zanr.ime}
                     </NavLink>
